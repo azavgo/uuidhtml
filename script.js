@@ -5,7 +5,6 @@ const newUUID = async () => {
         const uuid = data.data.join('');
         document.getElementById("uuidOutput").innerHTML = uuid;
     } catch (error) {
-        //console.error(error);
         const genRanHex = (size) => [...Array(size)]
                             .map(() => Math.floor(Math.random() * 16)
                             .toString(16))
